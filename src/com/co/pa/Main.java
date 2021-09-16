@@ -18,7 +18,7 @@ public class Main {
                 total += amountX;
             }
 
-            System.out.println( ((n-1) * max ) - (total - max));
+            System.out.println( ((n - 1) * max ) - (total - max));
         }
     }
 
@@ -29,14 +29,12 @@ public class Main {
 
         for(int i = 0; i < length; i++) {
             if (charArray[i] == 'B') break;
-            if (charArray[i] == 'X')
-                result++;
+            if (charArray[i] == 'X') result++;
         }
 
         for(int i = (length - 1); i > 0; i--) {
             if (charArray[i] == 'B') break;
-            if (charArray[i] == 'X')
-                result++;
+            if (charArray[i] == 'X') result++;
         }
         return result;
     }
